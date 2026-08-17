@@ -1,0 +1,1 @@
+node html-to-pdf.js static-cv.html CV.pdf

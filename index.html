@@ -330,6 +330,48 @@ body {
 .tl-body .org { font-size: 0.75rem; color: var(--blue); margin-top: 3px; font-weight: 500; }
 .tl-body p { font-size: 0.79rem; color: var(--muted); margin-top: 6px; line-height: 1.65; }
 
+
+/* Research Grants */
+.grant-list { display: flex; flex-direction: column; gap: 14px; }
+.grant-card {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.grant-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(59,91,219,0.08);
+}
+.grant-card .grant-title {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.35;
+}
+.grant-card .grant-meta {
+  font-size: 0.74rem;
+  color: var(--blue);
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.grant-card .grant-detail {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.grant-summary {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+.grant-summary strong { color: var(--navy2); }
+
 /* Education */
 .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .edu-card {
@@ -571,7 +613,42 @@ body {
       </div>
     </div>
 
+    
     <div class="m-section">
+      <h2>Research Grants &amp; Funded Projects<span class="underline"></span></h2>
+      <p class="grant-summary">
+        PhD Fellow / Researcher on three interdisciplinary funded projects with a combined project value of
+        <strong>AED 1.43 million</strong>, spanning artificial intelligence, computer vision, robotics,
+        human augmentation, and intelligent human–machine systems.
+      </p>
+
+      <div class="grant-list">
+
+        <div class="grant-card">
+          <div class="grant-title">Two-Handed Static and Dynamic Arabic Sign Language Translation System Integration Using Spatiotemporal and Machine Translation Models</div>
+          <div class="grant-meta">UAEU Program for Advanced Research (UPAR) &nbsp;·&nbsp; Apr 2022 — Mar 2024</div>
+          <div class="grant-detail"><strong>Role:</strong> PhD Fellow / Researcher &nbsp;·&nbsp; <strong>PI:</strong> Dr. Munkhjargal Gochoo &nbsp;·&nbsp; <strong>Award:</strong> AED 399,300</div>
+          <div class="grant-detail">Contributed to AI-based Arabic Sign Language translation research using spatiotemporal deep learning, computer vision, temporal modelling, and machine translation.</div>
+        </div>
+
+        <div class="grant-card">
+          <div class="grant-title">Astro Haptic Footwear: Human Augmentation for Mars Exploration</div>
+          <div class="grant-meta">UAEU–Zayed University Joint Research Grant &nbsp;·&nbsp; Jan 2022 — Jan 2024</div>
+          <div class="grant-detail"><strong>Role:</strong> PhD Fellow / Researcher &nbsp;·&nbsp; <strong>PI:</strong> Dr. Jose Berengueres &nbsp;·&nbsp; <strong>Award:</strong> AED 360,500</div>
+          <div class="grant-detail">Contributed to interdisciplinary R&amp;D in human augmentation, haptic interfaces, machine learning, sensing, robotics, prototype development, experimentation, and research dissemination.</div>
+        </div>
+
+        <div class="grant-card">
+          <div class="grant-title">Computer-/Robotic-Based Cognitive Training System for Elderly People in the UAE</div>
+          <div class="grant-meta">UAEU Program for Advanced Research (UPAR) &nbsp;·&nbsp; Jan 2019 — Dec 2022</div>
+          <div class="grant-detail"><strong>Role:</strong> PhD Fellow / Researcher &nbsp;·&nbsp; <strong>PI:</strong> Dr. Fady Shibata Alnajjar &nbsp;·&nbsp; <strong>Award:</strong> AED 673,000</div>
+          <div class="grant-detail">Contributed to AI-enabled cognitive training and autonomous assessment using humanoid social robotics, machine learning, human–robot interaction, and culturally adapted Arabic interactive systems.</div>
+        </div>
+
+      </div>
+    </div>
+
+<div class="m-section">
       <h2>Education<span class="underline"></span></h2>
       <div class="edu-grid">
         <div class="edu-card"><div class="degree">PhD in Informatics and Computing</div><div class="school">United Arab Emirates University</div><div class="year">Jan 2021 — May 2026</div></div>
