@@ -14,8 +14,10 @@ async function convertHtmlToPdf(inputFile, outputFile) {
     console.log(`Input : ${inputPath}`);
     console.log(`Output: ${outputPath}`);
 
-    const browser = await puppeteer.launch({
+const browser = await puppeteer.launch({
         headless: true,
+        // Point to standard Chrome installation on Windows (or change to Edge path if needed)
+        executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", 
         args: [
             "--no-sandbox",
             "--disable-setuid-sandbox",
